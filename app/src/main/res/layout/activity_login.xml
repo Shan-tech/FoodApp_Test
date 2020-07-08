@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+<androidx.constraintlayout.widget.Guideline
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    />
+
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/food_app"
+        android:textAlignment="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/etnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:hint="@string/mobile_number"
+        android:textSize="20sp"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:drawableLeft="@drawable/ic_baseline_phone_android_24"
+        android:drawableStart="@drawable/ic_baseline_phone_android_24" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        android:textSize="20sp"
+        android:layout_below="@id/etnumber"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_marginTop="35dp"
+        android:text="@string/login"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/txtForgotPassword"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnLogin"
+        android:layout_marginTop="10dp"
+        android:text="@string/forgot_password"
+        android:textSize="15sp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginStart="280dp" />
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="398dp"
+        android:layout_height="27dp"
+        android:layout_below="@+id/txtForgotPassword"
+        android:layout_alignBottom="@+id/txtForgotPassword"
+        android:layout_marginTop="268dp"
+        android:layout_marginBottom="-294dp"
+        android:text="@string/don_t_have_an_account_register"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:gravity="center_horizontal" />
+
+
+</RelativeLayout>

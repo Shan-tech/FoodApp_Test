@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#BBE2F1</color>
+    <color name="lightGreen">#C6EFE6</color>
+    <color name="header">#5579C7</color>
+    <color name="clicked_heart">#FF0000</color>
+    <color name="empty_heart">#FFFFFF</color>
+
+
+</resources>
