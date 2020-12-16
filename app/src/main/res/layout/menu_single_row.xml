@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="80dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     app:cardElevation="5dp"
@@ -16,7 +16,7 @@
         <TextView
                    android:id="@+id/serialNo"
                    android:layout_width="0dp"
-                   android:layout_height="match_parent"
+                   android:layout_height="wrap_content"
                    android:layout_marginStart="8dp"
                    android:layout_marginLeft="8dp"
                    android:layout_marginTop="20dp"
@@ -26,7 +26,7 @@
 
                <RelativeLayout
                    android:layout_width="0dp"
-                   android:layout_height="match_parent"
+                   android:layout_height="wrap_content"
                    android:layout_weight="3.5"
                    android:baselineAligned="false">
 
@@ -44,7 +44,7 @@
                        android:layout_width="wrap_content"
                        android:layout_height="wrap_content"
                        android:layout_below="@id/menuItem"
-                       android:padding="2.5dp"
+                       android:padding="2.8dp"
                        android:text="@string/rs_500"
                        android:textSize="15sp" />
                </RelativeLayout>

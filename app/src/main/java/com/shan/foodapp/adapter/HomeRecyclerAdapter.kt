@@ -1,5 +1,6 @@
 package com.shan.foodapp.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.AsyncTask
@@ -38,10 +39,11 @@ RecyclerView.Adapter<HomeRecyclerAdapter.HomeViewHolder>() {
     override fun getItemCount(): Int {
         return itemList.size
     }
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: HomeViewHolder, position: Int) {
         val food = itemList[position]
         holder.resName.text = food.name
-        holder.cost.text = food.cost_for_one
+        holder.cost.text = "Rs."+food.cost_for_one+"/-"
         holder.rating.text = food.rating
         val image = food.image_url
         Picasso.get().load(food.image_url).error(R.drawable.ic_launcher_background)

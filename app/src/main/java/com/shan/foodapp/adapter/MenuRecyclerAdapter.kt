@@ -1,5 +1,6 @@
 package com.shan.foodapp.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.AsyncTask
 import android.view.LayoutInflater
@@ -34,6 +35,7 @@ RecyclerView.Adapter<MenuRecyclerAdapter.MenuViewHolder>(){
     override fun getItemCount(): Int {
         return itemList.size
     }
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
         val cartItem=CartEntity(
             holder.menuItem.text.toString(),
@@ -41,8 +43,10 @@ RecyclerView.Adapter<MenuRecyclerAdapter.MenuViewHolder>(){
         )
         val menu = itemList[position]
         holder.menuItem.text = menu.name
-        holder.itemCost.text = menu.cost_for_one
-        holder.serialNo.text = "1"
+        holder.itemCost.text = "Rs. "+ menu.cost_for_one
+        for(i in 1..itemList.size){
+            holder.serialNo.text = "$i"
+        }
 
         val checkAdded=dbAsync(context,cartItem,1).execute()
         val added=checkAdded.get()

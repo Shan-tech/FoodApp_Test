@@ -75,8 +75,8 @@ class HomeFragment : Fragment() {
                                 val resListObject = ResList(
                                     resListJsonObject.getString("id"),
                                     resListJsonObject.getString("name"),
-                                    resListJsonObject.getString("cost_for_one"),
                                     resListJsonObject.getString("rating"),
+                                    resListJsonObject.getString("cost_for_one"),
                                     resListJsonObject.getString("image_url")
                                 )
                                 resList.add(resListObject)

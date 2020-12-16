@@ -1,5 +1,6 @@
 package com.shan.foodapp.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -30,10 +31,11 @@ RecyclerView.Adapter<FavouriteRecyclerAdapter.FavViewHolder>() {
       return favResList.size
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: FavViewHolder, position: Int) {
         val food = favResList[position]
         holder.resName.text = food.resName
-        holder.cost_for_one.text = food.resCost_For_one
+        holder.cost_for_one.text =food.resCost_For_one
         holder.rating.text = food.resRating
         Picasso.get().load(food.resImage).error(R.drawable.ic_launcher_background)
             .into(holder.resImage)
